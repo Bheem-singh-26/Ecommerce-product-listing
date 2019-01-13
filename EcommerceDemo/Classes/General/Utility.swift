@@ -7,3 +7,20 @@
 //
 
 import Foundation
+import RealmSwift
+
+class Utility{
+    
+    // Default function to get realm fetch realm data
+    class func fetchRealmData() -> RealmDataModel?{
+        let data = uiRealm.objects(RealmDataModel.self)
+        return data.first
+    }
+    
+    
+    
+}
+
+
+
+

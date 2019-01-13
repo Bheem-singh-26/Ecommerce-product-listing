@@ -7,3 +7,15 @@
 //
 
 import Foundation
+
+class EConstant {
+    
+    static let E_HOME_TITLE = "Ecommerce"
+    
+}
+
+
+enum TaxType: String {
+    case VAT4 = "VAT4"
+    case VAT = "VAT"
+}

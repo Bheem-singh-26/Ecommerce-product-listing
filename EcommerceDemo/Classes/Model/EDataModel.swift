@@ -7,3 +7,23 @@
 //
 
 import Foundation
+import Foundation
+import ObjectMapper
+
+import ObjectMapper
+
+struct EDataModel: Mappable {
+    
+    var categories = [ECategory]()
+    var rankings = [ERanking]()
+    
+    init?(map: Map) { }
+    
+    // Mappable
+    mutating func mapping(map: Map) {
+        categories      <- map["categories"]
+        rankings        <- map["rankings"]
+       
+    }
+    
+}

@@ -12,12 +12,6 @@
 		9BE632AE21E8332700B9F07B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BE632AC21E8332700B9F07B /* LaunchScreen.storyboard */; };
 		9BE632C021E8357B00B9F07B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE632B721E8357B00B9F07B /* AppDelegate.swift */; };
 		9BE632C721E83B1400B9F07B /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE632C621E83B1400B9F07B /* NetworkManager.swift */; };
-		9BE632CB21E92BE000B9F07B /* ECategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE632CA21E92BDF00B9F07B /* ECategory.swift */; };
-		9BE632CF21E92CE900B9F07B /* EProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE632CE21E92CE900B9F07B /* EProduct.swift */; };
-		9BE632D121E9C0A500B9F07B /* EVariant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE632D021E9C0A500B9F07B /* EVariant.swift */; };
-		9BE632D321E9C18E00B9F07B /* ETax.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE632D221E9C18E00B9F07B /* ETax.swift */; };
-		9BE632D521E9C43400B9F07B /* EDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE632D421E9C43400B9F07B /* EDataModel.swift */; };
-		9BE632D721E9C52B00B9F07B /* ERanking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE632D621E9C52B00B9F07B /* ERanking.swift */; };
 		9BE632D921E9F66600B9F07B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE632D821E9F66600B9F07B /* HomeViewController.swift */; };
 		9BE632DB21E9F86100B9F07B /* HomeViewController+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE632DA21E9F86100B9F07B /* HomeViewController+UITableView.swift */; };
 		9BE632DD21E9FA2100B9F07B /* EConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE632DC21E9FA2100B9F07B /* EConstant.swift */; };
@@ -39,12 +33,6 @@
 		9BE632AF21E8332700B9F07B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9BE632B721E8357B00B9F07B /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9BE632C621E83B1400B9F07B /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
-		9BE632CA21E92BDF00B9F07B /* ECategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ECategory.swift; sourceTree = "<group>"; };
-		9BE632CE21E92CE900B9F07B /* EProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EProduct.swift; sourceTree = "<group>"; };
-		9BE632D021E9C0A500B9F07B /* EVariant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EVariant.swift; sourceTree = "<group>"; };
-		9BE632D221E9C18E00B9F07B /* ETax.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ETax.swift; sourceTree = "<group>"; };
-		9BE632D421E9C43400B9F07B /* EDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDataModel.swift; sourceTree = "<group>"; };
-		9BE632D621E9C52B00B9F07B /* ERanking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERanking.swift; sourceTree = "<group>"; };
 		9BE632D821E9F66600B9F07B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		9BE632DA21E9F86100B9F07B /* HomeViewController+UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+UITableView.swift"; sourceTree = "<group>"; };
 		9BE632DC21E9FA2100B9F07B /* EConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EConstant.swift; sourceTree = "<group>"; };
@@ -164,12 +152,6 @@
 		9BE632BD21E8357B00B9F07B /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				9BE632D421E9C43400B9F07B /* EDataModel.swift */,
-				9BE632CA21E92BDF00B9F07B /* ECategory.swift */,
-				9BE632CE21E92CE900B9F07B /* EProduct.swift */,
-				9BE632D021E9C0A500B9F07B /* EVariant.swift */,
-				9BE632D221E9C18E00B9F07B /* ETax.swift */,
-				9BE632D621E9C52B00B9F07B /* ERanking.swift */,
 				9BE632DE21EB21A900B9F07B /* RealmModel.swift */,
 			);
 			path = Model;
@@ -366,21 +348,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9BE632D721E9C52B00B9F07B /* ERanking.swift in Sources */,
 				9BE632DF21EB21A900B9F07B /* RealmModel.swift in Sources */,
-				9BE632CB21E92BE000B9F07B /* ECategory.swift in Sources */,
-				9BE632CF21E92CE900B9F07B /* EProduct.swift in Sources */,
 				9BE632DB21E9F86100B9F07B /* HomeViewController+UITableView.swift in Sources */,
 				9BE632C721E83B1400B9F07B /* NetworkManager.swift in Sources */,
-				9BE632D521E9C43400B9F07B /* EDataModel.swift in Sources */,
 				9BE632E121EB390700B9F07B /* Utility.swift in Sources */,
 				9BE632D921E9F66600B9F07B /* HomeViewController.swift in Sources */,
 				9BE632E421EB4E0200B9F07B /* ProductTableViewCell.swift in Sources */,
 				9BE632E821EB55D000B9F07B /* UIView+CardView.swift in Sources */,
 				9BE632DD21E9FA2100B9F07B /* EConstant.swift in Sources */,
-				9BE632D121E9C0A500B9F07B /* EVariant.swift in Sources */,
 				9BE632C021E8357B00B9F07B /* AppDelegate.swift in Sources */,
-				9BE632D321E9C18E00B9F07B /* ETax.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

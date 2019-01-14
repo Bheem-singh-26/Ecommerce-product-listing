@@ -13,12 +13,15 @@ class HomeViewController: UIViewController {
     
     //MARK: ------------------------ IBOutlets and Variables ---------------------
     
+    @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var tableView: UITableView!
+    var selectedcategoryIndexPath:IndexPath = IndexPath(row: 0, section: 0)
     
     var dataSource: RealmDataModel? {
         //  property observer
         didSet{
             self.tableView.reloadData()
+            self.collectionView.reloadData()
         }
     }
     
@@ -28,7 +31,9 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        // initialize views
         initializeView()
+        
         // Load data
         self.fetchData()
         
@@ -42,6 +47,7 @@ class HomeViewController: UIViewController {
     func initializeView(){
         self.title = EConstant.E_HOME_TITLE
         
+        // configure UITableView
         tableView.estimatedRowHeight = 118.0
         tableView.allowsSelection = false
         tableView.separatorStyle = .none
@@ -49,6 +55,9 @@ class HomeViewController: UIViewController {
         tableView.register(UINib(nibName: cellIdentifier,bundle: nil), forCellReuseIdentifier: cellIdentifier)
         tableView.tableFooterView = UIView()
         
+        // configure UICollectionView
+        let categoryNib = UINib(nibName: CategoryCollectionViewCell.identifier(), bundle: nil)
+        collectionView.register(categoryNib, forCellWithReuseIdentifier: CategoryCollectionViewCell.identifier())
     }
     
     

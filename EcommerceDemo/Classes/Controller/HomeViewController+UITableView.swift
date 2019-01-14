@@ -9,7 +9,9 @@
 import UIKit
 
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
+    
     //MARK: ------------------------ TableView Delegates & Datasource -----------------------
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if let productCount = dataSource?.categories.first?.products.count{
             return productCount

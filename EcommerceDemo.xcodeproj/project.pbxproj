@@ -20,6 +20,9 @@
 		9BE632E421EB4E0200B9F07B /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE632E221EB4E0200B9F07B /* ProductTableViewCell.swift */; };
 		9BE632E521EB4E0200B9F07B /* ProductTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BE632E321EB4E0200B9F07B /* ProductTableViewCell.xib */; };
 		9BE632E821EB55D000B9F07B /* UIView+CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE632E721EB55D000B9F07B /* UIView+CardView.swift */; };
+		9BE632EB21EC7BCE00B9F07B /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE632E921EC7BCE00B9F07B /* CategoryCollectionViewCell.swift */; };
+		9BE632EC21EC7BCE00B9F07B /* CategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BE632EA21EC7BCE00B9F07B /* CategoryCollectionViewCell.xib */; };
+		9BE632EE21EC7F2400B9F07B /* HomeViewController+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE632ED21EC7F2400B9F07B /* HomeViewController+CollectionView.swift */; };
 		CB5B2322BF485B92A1CDC431 /* Pods_EcommerceDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 148537661D6D396483CFAA4F /* Pods_EcommerceDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +44,9 @@
 		9BE632E221EB4E0200B9F07B /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
 		9BE632E321EB4E0200B9F07B /* ProductTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductTableViewCell.xib; sourceTree = "<group>"; };
 		9BE632E721EB55D000B9F07B /* UIView+CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+CardView.swift"; sourceTree = "<group>"; };
+		9BE632E921EC7BCE00B9F07B /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		9BE632EA21EC7BCE00B9F07B /* CategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCollectionViewCell.xib; sourceTree = "<group>"; };
+		9BE632ED21EC7F2400B9F07B /* HomeViewController+CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+CollectionView.swift"; sourceTree = "<group>"; };
 		A052B2F05C638DDA8F9355D4 /* Pods-EcommerceDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcommerceDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-EcommerceDemo/Pods-EcommerceDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -121,6 +127,7 @@
 			children = (
 				9BE632D821E9F66600B9F07B /* HomeViewController.swift */,
 				9BE632DA21E9F86100B9F07B /* HomeViewController+UITableView.swift */,
+				9BE632ED21EC7F2400B9F07B /* HomeViewController+CollectionView.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -196,6 +203,8 @@
 			children = (
 				9BE632E221EB4E0200B9F07B /* ProductTableViewCell.swift */,
 				9BE632E321EB4E0200B9F07B /* ProductTableViewCell.xib */,
+				9BE632E921EC7BCE00B9F07B /* CategoryCollectionViewCell.swift */,
+				9BE632EA21EC7BCE00B9F07B /* CategoryCollectionViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -271,6 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9BE632AE21E8332700B9F07B /* LaunchScreen.storyboard in Resources */,
+				9BE632EC21EC7BCE00B9F07B /* CategoryCollectionViewCell.xib in Resources */,
 				9BE632E521EB4E0200B9F07B /* ProductTableViewCell.xib in Resources */,
 				9BE632AB21E8332700B9F07B /* Assets.xcassets in Resources */,
 				9BE632A921E8332700B9F07B /* Main.storyboard in Resources */,
@@ -352,8 +362,10 @@
 				9BE632DB21E9F86100B9F07B /* HomeViewController+UITableView.swift in Sources */,
 				9BE632C721E83B1400B9F07B /* NetworkManager.swift in Sources */,
 				9BE632E121EB390700B9F07B /* Utility.swift in Sources */,
+				9BE632EE21EC7F2400B9F07B /* HomeViewController+CollectionView.swift in Sources */,
 				9BE632D921E9F66600B9F07B /* HomeViewController.swift in Sources */,
 				9BE632E421EB4E0200B9F07B /* ProductTableViewCell.swift in Sources */,
+				9BE632EB21EC7BCE00B9F07B /* CategoryCollectionViewCell.swift in Sources */,
 				9BE632E821EB55D000B9F07B /* UIView+CardView.swift in Sources */,
 				9BE632DD21E9FA2100B9F07B /* EConstant.swift in Sources */,
 				9BE632C021E8357B00B9F07B /* AppDelegate.swift in Sources */,

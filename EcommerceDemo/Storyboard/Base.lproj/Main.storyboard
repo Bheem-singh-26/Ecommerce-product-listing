@@ -19,31 +19,62 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="P9i-G5-OpN">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="136" width="375" height="531"/>
                                 <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="ump-QY-nzD"/>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="qsn-Jj-rca"/>
                                 </connections>
                             </tableView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="pe7-lF-gFq">
+                                <rect key="frame" x="0.0" y="64" width="375" height="72"/>
+                                <color key="backgroundColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="72" id="aer-dE-RRf"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ojN-Bj-fAH">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="9i0-aV-WpJ">
+                                        <rect key="frame" x="0.0" y="16" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="WTb-bf-QhK"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="xQR-RC-h0B"/>
+                                </connections>
+                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="P9i-G5-OpN" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="8ZM-M9-5d0"/>
+                            <constraint firstItem="pe7-lF-gFq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Bcp-Bc-lyf"/>
                             <constraint firstItem="P9i-G5-OpN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="GWh-s9-xOV"/>
-                            <constraint firstItem="P9i-G5-OpN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Nan-qs-nVO"/>
+                            <constraint firstItem="pe7-lF-gFq" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="QuU-Rg-M3R"/>
+                            <constraint firstItem="pe7-lF-gFq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="SXg-7G-PAR"/>
+                            <constraint firstItem="P9i-G5-OpN" firstAttribute="top" secondItem="pe7-lF-gFq" secondAttribute="bottom" id="gYp-V7-OWs"/>
                             <constraint firstItem="P9i-G5-OpN" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="nWm-G1-anx"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="0ck-Aw-C1N"/>
                     <connections>
+                        <outlet property="collectionView" destination="pe7-lF-gFq" id="K5S-e3-gDq"/>
                         <outlet property="tableView" destination="P9i-G5-OpN" id="2ll-YU-jbp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="476" y="96.7016491754123"/>
+            <point key="canvasLocation" x="465" y="-108"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="EV1-Yv-ckb">

@@ -43,6 +43,7 @@ class RealmCategory: Object{
     @objc dynamic var name: String? = nil
     var products = List<RealmProduct>()
     var child_categories = List<Int>()
+    @objc dynamic var isSelected = false
     
 }
 

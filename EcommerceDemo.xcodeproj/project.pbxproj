@@ -23,6 +23,7 @@
 		9BE632EB21EC7BCE00B9F07B /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE632E921EC7BCE00B9F07B /* CategoryCollectionViewCell.swift */; };
 		9BE632EC21EC7BCE00B9F07B /* CategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BE632EA21EC7BCE00B9F07B /* CategoryCollectionViewCell.xib */; };
 		9BE632EE21EC7F2400B9F07B /* HomeViewController+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE632ED21EC7F2400B9F07B /* HomeViewController+CollectionView.swift */; };
+		9BF3282C21ED902E0073F4FA /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 9BF3282B21ED902E0073F4FA /* README.md */; };
 		CB5B2322BF485B92A1CDC431 /* Pods_EcommerceDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 148537661D6D396483CFAA4F /* Pods_EcommerceDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +48,7 @@
 		9BE632E921EC7BCE00B9F07B /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		9BE632EA21EC7BCE00B9F07B /* CategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCollectionViewCell.xib; sourceTree = "<group>"; };
 		9BE632ED21EC7F2400B9F07B /* HomeViewController+CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+CollectionView.swift"; sourceTree = "<group>"; };
+		9BF3282B21ED902E0073F4FA /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		A052B2F05C638DDA8F9355D4 /* Pods-EcommerceDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcommerceDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-EcommerceDemo/Pods-EcommerceDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -74,6 +76,7 @@
 		9BE6329721E8332700B9F07B = {
 			isa = PBXGroup;
 			children = (
+				9BF3282B21ED902E0073F4FA /* README.md */,
 				9BE632A221E8332700B9F07B /* EcommerceDemo */,
 				9BE632A121E8332700B9F07B /* Products */,
 				6BCDBA99CC112EE6768EA3E6 /* Pods */,
@@ -279,6 +282,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BF3282C21ED902E0073F4FA /* README.md in Resources */,
 				9BE632AE21E8332700B9F07B /* LaunchScreen.storyboard in Resources */,
 				9BE632EC21EC7BCE00B9F07B /* CategoryCollectionViewCell.xib in Resources */,
 				9BE632E521EB4E0200B9F07B /* ProductTableViewCell.xib in Resources */,
@@ -298,18 +302,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-EcommerceDemo/Pods-EcommerceDemo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 			);

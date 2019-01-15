@@ -8,7 +8,6 @@
 
 import Foundation
 import Alamofire
-import AlamofireObjectMapper
 
 
 let DATA_URL = "https://stark-spire-93433.herokuapp.com/json"
@@ -43,13 +42,6 @@ class NetworkManager{
         
         
     }
-    
-    
-    
-    
-    
-    
-    
     
     
     

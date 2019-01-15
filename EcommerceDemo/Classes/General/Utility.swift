@@ -11,26 +11,21 @@ import RealmSwift
 
 class Utility{
     
-    // Default function to get realm fetch realm data
+    // Default function to fetch realm data
     class func fetchRealmData() -> RealmDataModel?{
         let data = uiRealm.objects(RealmDataModel.self)
         return data.first
     }
     
-    class func selectCategoryOf(id: Int?, andRemove oldId:Int?){
-        if let new_id = id, let old_id = oldId{
-            let oldCategory = try! uiRealm.objects(RealmCategory.self).filter(predicateFor(id: old_id)).first!
-            let category = try! uiRealm.objects(RealmCategory.self).filter(predicateFor(id: new_id)).first!
-            try! uiRealm.write({ () -> Void in
-                oldCategory.isSelected = false
-                category.isSelected = true
-            })
-            
-        }
+    // to fetch all the products
+    class func fetchRealmProducts() -> Results<RealmProduct>?{
+        let data = uiRealm.objects(RealmProduct.self).filter(predicateFormat(type: .nameNotNil))
+        return data
     }
+
     
-    class func predicateFor(id:Int) -> NSPredicate{
-        let predicate = NSPredicate(format: "id = %@", id)
+    class func predicateFormat(type: FormatEnum) -> NSPredicate{
+        let predicate = NSPredicate(format: type.rawValue)
         return predicate
     }
     

@@ -19,3 +19,7 @@ enum TaxType: String {
     case VAT4 = "VAT4"
     case VAT = "VAT"
 }
+
+enum FormatEnum: String{
+    case nameNotNil = "name != nil"
+}

@@ -35,16 +35,20 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
+        // if category selection changes
         if selectedcategoryIndexPath != indexPath{
             selectedcategoryIndexPath = indexPath
             
-            let preSelectedCell = collectionView.cellForItem(at: selectedcategoryIndexPath) as! CategoryCollectionViewCell
+            let preSelectedCell = collectionView.cellForItem(at: selectedcategoryIndexPath!) as! CategoryCollectionViewCell
             preSelectedCell.isSelected = false
             let cell = collectionView.cellForItem(at: indexPath) as! CategoryCollectionViewCell
             cell.isSelected = true
-            
+            // scroll to item
             self.collectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
+            
+            // reload tableview data
+            self.tableDataSource = tableViewDataSource()
+            reloadTableView()
             
         }
         
